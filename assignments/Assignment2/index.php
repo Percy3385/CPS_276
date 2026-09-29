@@ -5,7 +5,7 @@ $numbers = range(1, 50);
 // Start the string that will display the even numbers
 $evenNumbers = "Even Numbers: ";
 
-// Loop through each number in the array
+//2. Loop through each number in the array
 foreach ($numbers as $number) {
 
     // Check if the number is even
@@ -17,6 +17,7 @@ foreach ($numbers as $number) {
 }
 
 // Store the Bootstrap form HTML inside a PHP variable
+// 3. Heredoc - a PHP string, containing several lines of HTML
 $form = <<<HTML
 <div class="mb-3">
     <label for="email" class="form-label">Email address</label>
@@ -28,34 +29,38 @@ $form = <<<HTML
 </div>
 
 HTML;
-// Function used to create the table
+//5. Function used to create the table
 function createTable($rows, $columns)
 {
 
     // Start the Bootstrap table
     $table = '<table class="table table-bordered">';
 
-    // Loop through the rows
+    //4a. Loop through the rows (Outer Loop)
     for ($i = 1; $i <= $rows; $i++) {
 
-        // Loop through the columns
+        //4a. Loop through the columns (Inner Loop)
         $table .= "<tr>";
+        //4a. Every time the outer loop runs, its creates a new row using <tr>
         for ($j = 1; $j <= $columns; $j++) {
 
             // Add a table cell with the row and column number
             $table .= "<td>Row $i, Col $j</td>";
+            //4a. For every row, the inner loop creates each table cell using <td>
+            //4b. the ".=" operator is used to keep adding HTML to the existing $table variable
         }
 
         // Close the table row
         $table .= "</tr>";
     }
     $table .= "</table>";
+    
 
-    // Return the finished table
+    //5. Return the finished table
     return $table;
 }
 
-// Create an 8 row by 6 column table
+//5. Create an 8 row by 6 column table
 $table = createTable(8, 6);
 ?>
 
