@@ -54,7 +54,7 @@ function createTable($rows, $columns)
         $table .= "</tr>";
     }
     $table .= "</table>";
-    
+
 
     //5. Return the finished table
     return $table;
