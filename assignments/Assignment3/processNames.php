@@ -54,7 +54,7 @@ Each line becomes one element in the array.
             // Sort the names alphabetically.
             sort($nameArray);
             /*
-            Question 4:
+Question 4:
             implode() does the opposite of explode().
 It takes the array of sorted names and joins the items
             back into one string.
