@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </p>
         <?php
         // Display the success or error message.
-        // The class provides the message and optional file link.
+        // The class provides the message and optional file link. 
         echo $message;
         ?>
         <!-- Question 2:
