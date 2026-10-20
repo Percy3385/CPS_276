@@ -19,7 +19,7 @@ class Directories
         // Creating a directory is different from creating a file.
         // mkdir() creates a folder, while fopen() creates or
         // opens a file.
-        //
+        //  
         // We use file_exists() before mkdir() because we don't
         // want to try creating a folder that already exists.
         // It also keeps us from accidentally changing old work.
