@@ -1,15 +1,19 @@
 <?php
-// Question 1:
-// require_once loads Calculator.php so we can use the class.
-// It also makes sure the file is only loaded one time.
-// require would load it again if called again.
-// include gives a warning if the file is missing,
-// while require stops the script with an error.
-require_once "Calculator.php";
-// Question 3:
-// Calculator is the class (the blueprint).
-// $Calculator is the object made from that class.
-// We create the object so we can call its calc() method.
+/*
+Question 1:
+require_once loads Calculator.php so we can use the class.
+It also makes sure the file is only loaded one time.
+require would load it again if called again.
+include gives a warning if the file is missing,
+while require stops the script with an error.
+*/
+require_once "calculator.php";
+/*
+ Question 3:
+Calculator is the class (the blueprint).
+$Calculator is the object made from that class.
+We create the object so we can call its calc() method.
+*/
 $Calculator = new Calculator();
 // This variable will hold all the calculation results.
 $result = "";
