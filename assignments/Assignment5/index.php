@@ -2,7 +2,7 @@
 // Question 5:
 // Include the class so we can use its methods.
 // This keeps the file operations separate from the HTML.
-require_once "classes/Directories.php";
+require_once "classes/directories.php";
 $message = "";
 // Question 2:
 // Check whether the user submitted the form.
