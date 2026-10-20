@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
          The form uses POST to send information to index.php.
          Each field has a name that PHP uses with $_POST.
          The required and pattern attributes also help
-         validate the information before submission.
+         validate the information before submission. 
     -->
         <form method="post" action="index.php">
             <div class="mb-3">
