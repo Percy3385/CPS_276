@@ -137,7 +137,7 @@ if ($signature !== '%PDF-') {
 /*
  * Set upload directory
  */
-$uploadDirectory = "../files/";
+$uploadDirectory = __DIR__ . "/../files/";
 
 
 /*
